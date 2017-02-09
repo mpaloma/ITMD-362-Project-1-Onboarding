@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" class="nojs">		
+	<!Project Requirements: 
+		- one valid well-formed HTML file, one valid CSS file, one JavaScript file
+		- all source files in UTF-8/Unicode character encoding with unix-style line endings
+		- organized, readable source that is hand-writeen and original
+		- HTML requirements:
+			- only structural, semantic uses of HTML elements and attributes, NO FORMATTING
+			- at least three HTML form elements, written in conjuction with label tags and the for attributes
+			- semantically structured text-based HTML content to accompany any media elements
+		- CSS requirements:
+			- CSS file should open with a set of reset styles (such as the minified Eric Meyer from class demos)
+			- only relative units (em, rem, vm, %) in CSS
+			- use at least two min-width media queries to enhance mobile-first styles for larger screens
+		- JavaScript requirements:
+			- throws no uncaught errors and is loaded unobtrusively
+			- no JavaScript in HTML file
+			- function closures and other techniques to avoid polluting global window namespace
+			- JavaScript that uses only asynchronous methods and callbacks
+		- Git requirements
+			- Git repository with frequent commits and meaningful commit messages that reflect each set of changes
+			- Use of command-line Git program on computer, not through interface
+			- Repository must only contain files and commits from this project>
+	<head>
+		<title>Water Polo Club</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit="no" />
+		<link rel="Stylesheet" type="text/css" href="externals/styles.css" />
+		<script src="externals/script.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<img class="signupImage" src="images/ball.jpg" alt="Water polo ball">
+		<header>
+			<h1>Water Polo Club</h1>
+			<h2>Sign up here with your general info to join the new water polo club, founded by Miguel Paloma.</h2>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="#"><h3>Home</h3></a></li>
+				<li><a href="#"><h3>About Us</h3></a></li>
+				<li><a href="#"><h3>Calendar</h3></a></li>
+				<li><a href="#"><h3>Sign up</h3></a></li>
+			</ul>
+		</nav>
+		<form>
+			<p><label for="firstname">First Name:</label>
+			<input type="text" name="firstname" value=""></p>
+			
+			<p><label for="lastname">Last Name:</label>
+			<input type="text" name="lastname" value=""></p>
+			
+			<p><label for="email">Email Address:</label>
+			<input type="email" name="email" value=""></p>
+			
+			<p><label for="experience">Years of Experience:</label></p>
+			<p><input type="radio" name="experience" value="None">  None</p>
+			<p><input type="radio" name="experience" value="1 Year">  1</p>
+			<p><input type="radio" name="experience" value="2 Years">  2</p>
+			<p><input type="radio" name="experience" value="3 or more Years">  3 or more</p>
+			
+			<p>Would you like to receieve periodic electronic newsletters from the team?</p>
+			<p><input type="checkbox" name="newsletter" value="newsletter">Yes, I would like to receieve the newsletter from the team.</p>
+			
+			<h4 id="submit" onClick="submit()">Submit</h4>
+		</form>
+	</body>
+</html>
+			
